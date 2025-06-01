@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - John</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('background.jpg') no-repeat center center/cover;
+      filter: brightness(40%) blur(4px);
+      z-index: -1;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+      padding: 30px;
+      margin: 60px auto;
+      text-align: center;
+      color: white;
+    }
+
+    .container img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 4px solid #ffffff44;
+      box-shadow: 0 0 10px #00000050;
+      transition: transform 0.3s ease;
+    }
+
+    .container img:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-weight: 300;
+      font-size: 1.4rem;
+      color: #c7e5ff;
+      margin-bottom: 25px;
+    }
+
+    .info {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #f0f0f0;
+      margin-bottom: 20px;
+    }
+
+    .tagline {
+      font-style: italic;
+      color: #a0d8ff;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background: #00c6ff;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #0072ff;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="background"></div>
+
+  <div class="container">
+    <img src="me.jpg" alt="My Picture" />
+    <h1>John Alvielle Condecido</h1>
+    <h2>Electronics Technology Student 📟 | Pinaka Magandang Lalake Sa Balat Ng Lupa</h2>
+
+    <p class="info">
+      👋 Hello! I'm John, 22 years old and currently studying at <strong>Bulacan State University</strong>.  
+      I love building cool tech projects, especially with microcontrollers like the ESP32 and Arduino.
+      <br><br>
+      💡 My hobbies include coding, exploring new gadgets, gaming, and improving my DIY projects.
+      I'm always learning something new and pushing my skills to the next level.
+    </p>
+
+    <p class="tagline">
+      “Turn passion into purpose and purpose into progress.”
+    </p>
+
+    <a href="https://web.facebook.com/Alvielle15" class="btn" target="_blank">Visit My Facebook</a>
+  </div>
+
+</body>
+</html>
